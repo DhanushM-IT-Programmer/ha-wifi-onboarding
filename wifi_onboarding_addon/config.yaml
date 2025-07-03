@@ -1,0 +1,17 @@
+name: WiFi Onboarding
+slug: wifi_onboarding_addon
+description: First‑boot Wi‑Fi onboarding via hotspot & captive portal
+version: "1.0.0"
+startup: services
+boot: auto
+arch:
+  - aarch64
+  - armv7
+  - amd64
+host_network: true
+privileged:
+  - NET_ADMIN
+  - SYS_MODULE
+full_access: true
+options: {}
+schema: {}
